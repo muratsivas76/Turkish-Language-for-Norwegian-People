@@ -18,6 +18,7 @@ This project aims to provide free, open-source, and high-quality Turkish languag
 - `pdf/` - Printable lesson materials and booklets
 - `movs/` - Video lessons and explanations
 - `audios/` - Audio lessons and pronunciation guides
+- `images/` - Image files 
 
 ## How to Use
 
