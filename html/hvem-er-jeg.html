@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvem Er Jeg? - Murat | tyrkisk.tr</title>
+    <meta name="description" content="Møt Murat - din tyrkiske språkvenn. Lær tyrkisk gratis gjennom uformelle samtaler og kulturell utveksling.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e63946, #f4a261, #2a9d8f);
+        }
+        
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #1d3557;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        
+        .intro-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #e63946;
+        }
+        
+        .section {
+            margin: 35px 0;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        h2 {
+            color: #1d3557;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2::before {
+            content: "•";
+            color: #e63946;
+            font-size: 1.5em;
+        }
+        
+        .education-item, .language-item {
+            background: #f1faee;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #457b9d;
+        }
+        
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .language-item {
+            background: #e9f5ff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .tech-item {
+            background: #fff3cd;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        
+        .philosophy-box {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .philosophy-box::before {
+            content: """;
+            font-size: 4em;
+            color: rgba(0,0,0,0.1);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        
+        .telegram-section {
+            background: linear-gradient(135deg, #0088cc, #005f8a);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .telegram-button {
+            display: inline-block;
+            background: white;
+            color: #0088cc;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .telegram-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        
+        .heart {
+            color: #e63946;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .language-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <h1>Hvem Er Jeg?</h1>
+            <p class="subtitle">Din tyrkiske språkvenn og kulturguide</p>
+        </div>
+
+        <div class="intro-box">
+            <p><strong>Hei! Jeg heter Murat</strong> - en språkentusiast fra Tyrkia som brenner for å hjelpe nordmenn å lære tyrkisk på en uformell og hyggelig måte.</p>
+        </div>
+
+        <div class="section">
+            <h2>📚 Min Bakgrunn</h2>
+            <div class="education-item">
+                <strong>🎓 Istanbul Universitet</strong><br>
+                Litteraturfakultetet - 2000
+            </div>
+            <p>Jeg er født i 1976 i Sivas, en by med rik kulturarv i Tyrkia. Min utdannelse fra Istanbul Universitet har gitt meg et solid grunnlag for å undervise i tyrkisk språk og kultur.</p>
+        </div>
+
+        <div class="section">
+            <h2>🌍 Språk Jeg Snakker</h2>
+            <div class="language-grid">
+                <div class="language-item">
+                    <strong>🇹🇷 Tyrkisk</strong><br>
+                    Morsmål
+                </div>
+                <div class="language-item">
+                    <strong>🇳🇴 Norsk</strong><br>
+                    Lærer nå!
+                </div>
+                <div class="language-item">
+                    <strong>🇦🇷 Spansk</strong><br>
+                    Flytende
+                </div>
+                <div class="language-item">
+                    <strong>🇸🇦 Arabisk</strong><br>
+                    God forståelse
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💻 Mine Interesser</h2>
+            <p>Jeg er lidenskapelig opptatt av teknologi og kreativitet:</p>
+            <div class="tech-item">Java 8 Ray Tracer</div>
+            <div class="tech-item">Visuell Kunst</div>
+            <div class="tech-item">Programmering</div>
+            <div class="tech-item">Kulturforskning</div>
+            <p>Jeg deler ofte visuelle kunstverk jeg lager med min egen Java 8 Ray Tracer i Telegram-gruppen vår!</p>
+        </div>
+
+        <div class="philosophy-box">
+            <h2>🎯 Min Filosofi</h2>
+            <p><em>"Dette er INGEN strukturert kurs, men en ekte fellesskap der du kan øve på tyrkisk i en avslappet og støttende atmosfære. Alt er basert på frivillighet og gjensjeldig hjelp."</em></p>
+        </div>
+
+        <div class="section">
+            <h2>📖 Hva Jeg Tilbyr</h2>
+            <p>I vår Telegram-gruppe får du:</p>
+            <div class="education-item">
+                <strong>🎯 Autentisk Tyrkisk</strong><br>
+                Både standard språk og lokale dialekter
+            </div>
+            <div class="education-item">
+                <strong>🏛️ Tyrkisk Kultur</strong><br>
+                Tradisjoner, skikker og hverdagsliv
+            </div>
+            <div class="education-item">
+                <strong>💬 Daglige Samtaler</strong><br>
+                Lær gjennom naturlige samtaler
+            </div>
+            <div class="education-item">
+                <strong>🤝 Karşılıklı Yardımlaşma</strong><br>
+                Gjensidig hjelp mellom deltakere
+            </div>
+        </div>
+
+        <div class="telegram-section">
+            <h2>🚀 Bli Med på Reisen!</h2>
+            <p>La oss lære sammen i en hyggelig og uformell atmosfære. Jeg byr deg hjertelig velkommen til vår digitale "sohbet" (samtale).</p>
+            <a href="https://t.me/trnovennskap" class="telegram-button">BLI MED I TELEGRAM-GRUPPA</a>
+            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;">Alt er gratis, for kjærligheten til språk!</p>
+        </div>
+
+        <div class="footer">
+            <p>Med vennlig hilsen og <span class="heart">❤️</span> "dost elinin sıcaklığı"</p>
+            <p>© 2024 tyrkisk.tr - Din gratis vei til tyrkisk språk og kultur</p>
+        </div>
+    </div>
+</body>
+</html>

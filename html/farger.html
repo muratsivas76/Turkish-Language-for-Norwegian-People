@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyrkiske Farger | Lær Tyrkisk | tyrkisk.tr</title>
+    <meta name="description" content="Lær tyrkiske farger. Gratis og visuell tyrkisk undervisning for nordmenn.">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #2d3436;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        
+        .colors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .color-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            border: 3px solid #dfe6e9;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .color-sample {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .turkish {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .norwegian {
+            font-size: 1.6em;
+            color: #2d3436;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        
+        .pronunciation {
+            color: #636e72;
+            font-size: 1.1em;
+            margin-top: 8px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 2px solid #dfe6e9;
+            color: #636e72;
+        }
+        
+        .telegram-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: 2px solid #0088cc;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .telegram-link:hover {
+            background: #0088cc;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .turkish {
+                font-size: 1.8em;
+            }
+            
+            .norwegian {
+                font-size: 1.3em;
+            }
+            
+            .colors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Tyrkiske Farger</h1>
+        
+        <div class="colors-grid">
+            <!-- Kırmızı -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #e74c3c;"></div>
+                <div class="turkish" style="color: #e74c3c;">Kırmızı</div>
+                <div class="norwegian">Rød</div>
+                <div class="pronunciation">(kırmızı)</div>
+            </div>
+            
+            <!-- Mavi -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #3498db;"></div>
+                <div class="turkish" style="color: #3498db;">Mavi</div>
+                <div class="norwegian">Blå</div>
+                <div class="pronunciation">(mavi)</div>
+            </div>
+            
+            <!-- Yeşil -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #27ae60;"></div>
+                <div class="turkish" style="color: #27ae60;">Yeşil</div>
+                <div class="norwegian">Grønn</div>
+                <div class="pronunciation">(yeşil)</div>
+            </div>
+            
+            <!-- Sarı -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #f1c40f;"></div>
+                <div class="turkish" style="color: #f1c40f;">Sarı</div>
+                <div class="norwegian">Gul</div>
+                <div class="pronunciation">(sarı)</div>
+            </div>
+            
+            <!-- Turuncu -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #e67e22;"></div>
+                <div class="turkish" style="color: #e67e22;">Turuncu</div>
+                <div class="norwegian">Oransje</div>
+                <div class="pronunciation">(turuncu)</div>
+            </div>
+            
+            <!-- Mor -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #9b59b6;"></div>
+                <div class="turkish" style="color: #9b59b6;">Mor</div>
+                <div class="norwegian">Lilla</div>
+                <div class="pronunciation">(mor)</div>
+            </div>
+            
+            <!-- Pembe -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #fd79a8;"></div>
+                <div class="turkish" style="color: #fd79a8;">Pembe</div>
+                <div class="norwegian">Rosa</div>
+                <div class="pronunciation">(pembe)</div>
+            </div>
+            
+            <!-- Kahverengi -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #8b4513;"></div>
+                <div class="turkish" style="color: #8b4513;">Kahverengi</div>
+                <div class="norwegian">Brun</div>
+                <div class="pronunciation">(kahverengi)</div>
+            </div>
+            
+            <!-- Siyah -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #2d3436; border-color: #b2bec3;"></div>
+                <div class="turkish" style="color: #2d3436;">Siyah</div>
+                <div class="norwegian">Svart</div>
+                <div class="pronunciation">(siyah)</div>
+            </div>
+            
+            <!-- Beyaz -->
+            <div class="color-card">
+                <div class="color-sample" style="background: #ffffff; border: 4px solid #b2bec3;"></div>
+                <div class="turkish" style="color: #2d3436;">Beyaz</div>
+                <div class="norwegian">Hvit</div>
+                <div class="pronunciation">(beyaz)</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💡 <strong>Tips:</strong> Fargene på tyrkisk er enkle og logiske!</p>
+            <a href="https://t.me/trnovennskap" class="telegram-link">💬 Still spørsmål i vår Telegram-gruppe</a>
+            <p style="margin-top: 25px; font-style: italic;">Med "dost elinin sıcaklığı" ❤️</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #95a5a6;">© 2024 tyrkisk.tr - GPL V3</p>
+        </div>
+    </div>
+</body>
+</html>
